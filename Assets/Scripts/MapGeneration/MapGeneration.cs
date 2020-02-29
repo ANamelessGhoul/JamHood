@@ -12,6 +12,8 @@ public class MapGeneration : MonoBehaviour
     [Header("Map")] [SerializeField] private int sizeX = 10;
     [SerializeField] private int sizeY = 10;
     [SerializeField] private GameObject block;
+    [SerializeField] private int blockSizeX = 2;
+    [SerializeField] private int blockSizeY = 2;
     [SerializeField] private float thresholdValue;
     private GameObject environment;
     [Header("Enemies")] [SerializeField] private LayerMask groundLayer;
@@ -60,7 +62,7 @@ public class MapGeneration : MonoBehaviour
             {
                 var noiseValue = GenereteNoise(x, y);
                 if (noiseValue > thresholdValue)
-                    Instantiate(block, new Vector3(2 * x + 0.5f, 0, 2 * y + 0.5f), Quaternion.identity, environment.transform);
+                    Instantiate(block, new Vector3(blockSizeX * x + 0.5f, 0, blockSizeY * y + 0.5f), Quaternion.identity, environment.transform);
             }
         }
     }
@@ -108,11 +110,11 @@ public class MapGeneration : MonoBehaviour
             for (int y = 0; y < sizeY; y++)
             {
                 RaycastHit hit;
-                Physics.Raycast(new Vector3(2 * x + 0.5f, 1.7f, 2 * y + 0.5f), Vector3.down, out hit, 0.4f, groundLayer );
+                Physics.Raycast(new Vector3(blockSizeX * x + 0.5f, 1.7f, blockSizeY * y + 0.5f), Vector3.down, out hit, 0.4f, groundLayer );
                 //Debug.DrawRay(new Vector3(2 * x + 0.5f, 1.7f, 2 * y + 0.5f), Vector3.down * 0.4f, Color.red, 60f);
                 if (hit.collider == null && Random.Range(0, 100) < enemyChance)
                 {
-                    Instantiate(enemyObj, new Vector3(2 * x + 0.5f, 0.5f, 2 * y + 0.5f), Quaternion.identity, enemies.transform);
+                    Instantiate(enemyObj, new Vector3(blockSizeX * x + 0.5f, 0.5f, blockSizeY * y + 0.5f), Quaternion.identity, enemies.transform);
                 }
             }
         }
