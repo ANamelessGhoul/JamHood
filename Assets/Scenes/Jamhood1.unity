@@ -749,6 +749,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1083727997 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3661080060009717413, guid: 63caac1a71f40e74e9fb51637bfcfba7,
+    type: 3}
+  m_PrefabInstance: {fileID: 3661080060486096094}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1083727998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083727997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af685540aec21f74ca36a235fb8db7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 4
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &1289156036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,12 +1313,18 @@ PrefabInstance:
       propertyPath: tf_cam
       value: 
       objectReference: {fileID: 500973886}
+    - target: {fileID: 3661080060009717410, guid: 63caac1a71f40e74e9fb51637bfcfba7,
+        type: 3}
+      propertyPath: attackRange
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3661080060009717413, guid: 63caac1a71f40e74e9fb51637bfcfba7,
         type: 3}
       propertyPath: m_Name
       value: Player1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3661080060009717410, guid: 63caac1a71f40e74e9fb51637bfcfba7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 63caac1a71f40e74e9fb51637bfcfba7, type: 3}
 --- !u!1001 &6104156031861026685
 PrefabInstance:

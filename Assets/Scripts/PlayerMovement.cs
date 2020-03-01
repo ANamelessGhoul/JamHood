@@ -66,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
         {
             case PlayerState.Normal:
                 HandleInput();
+
                 break;
             case PlayerState.Attacking:
             case PlayerState.Special:
@@ -74,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
                 break;
         }
 
-        
+
         
         _spriteRenderer.flipX = moveX > 0.2f;
 
@@ -85,9 +86,10 @@ public class PlayerMovement : MonoBehaviour
 
         _animator.SetFloat("velocityV", moveY);
 
-        _animator.SetBool("Special", isSpecial);
+        //_animator.SetBool("Special", isSpecial);
 
         HandleAttack();
+
     }
 
     private void HandleInput()
@@ -103,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
             case PlayerType.Player2:
                 moveX = Input.GetAxis("HorizontalP2");
                 moveY = Input.GetAxis("VerticalP2");
-                isAttack = Input.GetKeyDown(KeyCode.JoystickButton2);
+                isAttack = Input.GetKeyDown(KeyCode.JoystickButton5);
                 isSpecial = Input.GetKeyDown(KeyCode.JoystickButton1);
                 break;
             default:

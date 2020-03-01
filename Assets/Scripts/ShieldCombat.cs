@@ -15,15 +15,46 @@ public class ShieldCombat : MonoBehaviour
 
     public void ExecuteAttack(Vector3 dir)
     {
+        StartCoroutine(ExecuteAttackA(dir));
+
+    }
+
+    public IEnumerator ExecuteAttackA(Vector3 dir)
+    {
+        var hitObjects = new List<GameObject>();
+        
+        yield return new WaitForSeconds(0.5f);
+        
         for (int i = -60; i <= 60; i += 10)
         {
             
             RaycastHit hit;
-            Debug.DrawRay(transform.position, Quaternion.Euler(0, i, 0) * dir * attackRange, Color.red, 1f);
-            Physics.Raycast(transform.position, Quaternion.Euler(i, 0, 0) * dir, out hit, attackRange, enemyLayer);
+            Debug.DrawRay(transform.position, Quaternion.Euler(0, i, 0) * dir.normalized * attackRange, Color.red, 1f);
+            Physics.Raycast(transform.position, Quaternion.Euler(0, i, 0) * dir, out hit, attackRange, enemyLayer);
             
-            //Debug.Log(hit);
+            if(hit.collider != null && !hitObjects.Contains(hit.collider.gameObject))
+                hitObjects.Add(hit.collider.gameObject);
+            Debug.Log(hitObjects.Count);
 
+        }
+
+        foreach (var hit in hitObjects)
+        {
+            var hitRb = hit.GetComponent<Rigidbody>();
+            if(hitRb == null)
+                continue;
+
+            hitRb.velocity = (hit.transform.position - transform.position).normalized * 10;
+            
+            
+        }
+        
+        
+        yield return new WaitForSeconds(0.2f);
+
+        foreach (var hit in hitObjects)
+        {
+            Destroy(hit);
         }
 
     }
