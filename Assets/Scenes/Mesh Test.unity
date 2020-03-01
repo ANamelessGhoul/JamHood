@@ -495,7 +495,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f69a3069451b404ebca085ba9a523c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meshR: {fileID: 1832311845}
   vec1: {x: 0, y: 0, z: 0}
 --- !u!23 &1360673615
 MeshRenderer:
@@ -515,7 +514,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b98883ae881378b41b8364ded64e03d5, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
