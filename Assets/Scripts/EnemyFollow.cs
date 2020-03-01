@@ -13,7 +13,7 @@ public class EnemyFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _animator = GetComponentInChildren<Animator>()
+        _animator = GetComponentInChildren<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
