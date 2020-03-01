@@ -8,9 +8,12 @@ public class EnemyFollow : MonoBehaviour
     [SerializeField] private float minDist = 2;
     [SerializeField] private float maxDist = 15;
     private Transform target;
+
+    private Animator _animator;
     // Start is called before the first frame update
     void Start()
     {
+        _animator = GetComponentInChildren<Animator>()
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
@@ -28,6 +31,7 @@ public class EnemyFollow : MonoBehaviour
             }
             else
             {
+                _animator.SetBool("Attack1",true);
                 Debug.Log("<color=red>Hit! </color>");
             }
         }
