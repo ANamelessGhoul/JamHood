@@ -1,7 +1,16 @@
 fileFormatVersion: 2
 guid: 5e1139bd1b2639a43a7b44a04b35d47a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4941202947601354634
+    second: frontpunch-stun_0
+  - first:
+      213: -467775796789889997
+    second: frontpunch-stun_1
+  - first:
+      213: 1573958050170473867
+    second: frontpunch-stun_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +93,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: frontpunch-stun_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 139
+        width: 848
+        height: 1767
+      alignment: 9
+      pivot: {x: 0.43405536, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670bb1949125d6bb0800000000000000
+      internalID: -4941202947601354634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frontpunch-stun_1
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 125
+        width: 789
+        height: 1733
+      alignment: 9
+      pivot: {x: 0.5006337, y: 0.53664166}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33430d524602289f0800000000000000
+      internalID: -467775796789889997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frontpunch-stun_2
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 143
+        width: 1032
+        height: 1701
+      alignment: 9
+      pivot: {x: 0.5707364, y: 0.5467372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d07c7e182d7d510800000000000000
+      internalID: 1573958050170473867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

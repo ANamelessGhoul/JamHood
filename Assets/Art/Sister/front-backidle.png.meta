@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 144b77e3f31c9ca44ba9d5e60c031914
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2413369962421769548
+    second: front-backidle_0
+  - first:
+      213: 26930373136315300
+    second: front-backidle_1
+  - first:
+      213: 6133897887278694737
+    second: front-backidle_2
+  - first:
+      213: 2383447046594085134
+    second: front-backidle_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +96,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: front-backidle_0
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 159
+        width: 851
+        height: 1744
+      alignment: 9
+      pivot: {x: 0.55909514, y: 0.5332569}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c455fb9b1330e7120800000000000000
+      internalID: 2413369962421769548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front-backidle_1
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 161
+        width: 848
+        height: 1824
+      alignment: 9
+      pivot: {x: 0.5636793, y: 0.50986844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3757c180daf5000800000000000000
+      internalID: 26930373136315300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front-backidle_2
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 147
+        width: 848
+        height: 1840
+      alignment: 9
+      pivot: {x: 0.4658019, y: 0.5054348}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15104c331abff1550800000000000000
+      internalID: 6133897887278694737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front-backidle_3
+      rect:
+        serializedVersion: 2
+        x: 3021
+        y: 149
+        width: 839
+        height: 1754
+      alignment: 9
+      pivot: {x: 0.4851013, y: 0.53021663}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01c139f574b31120800000000000000
+      internalID: 2383447046594085134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

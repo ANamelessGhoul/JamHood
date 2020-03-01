@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 3de1125fb7a459e4aaae20bade900955
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8318951395391806201
+    second: leftpunch_0
+  - first:
+      213: 1364378434335420892
+    second: leftpunch_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +90,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: leftpunch_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 129
+        width: 958
+        height: 1729
+      alignment: 9
+      pivot: {x: 0.48652938, y: 0.53788316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa911ae73ad27370800000000000000
+      internalID: 8318951395391806201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftpunch_1
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 84
+        width: 1099
+        height: 1720
+      alignment: 9
+      pivot: {x: 0.5077343, y: 0.5406977}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd134cd05fe3fe210800000000000000
+      internalID: 1364378434335420892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

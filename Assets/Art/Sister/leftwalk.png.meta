@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 93fd8dcaf8a908f4a8eb97b3b98e5e65
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4807585400952270499
+    second: leftwalk_0
+  - first:
+      213: -9186372597638787359
+    second: leftwalk_1
+  - first:
+      213: 6719257063028236944
+    second: leftwalk_2
+  - first:
+      213: -1954806922668193450
+    second: leftwalk_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +96,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: leftwalk_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 129
+        width: 982
+        height: 1729
+      alignment: 9
+      pivot: {x: 0.4653768, y: 0.53788316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae2d135379f7b240800000000000000
+      internalID: 4807585400952270499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftwalk_1
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 148
+        width: 1089
+        height: 1678
+      alignment: 9
+      pivot: {x: 0.44444445, y: 0.5542312}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee8b5f3bc2738080800000000000000
+      internalID: -9186372597638787359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftwalk_2
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 302
+        width: 948
+        height: 1727
+      alignment: 9
+      pivot: {x: 0.4653061, y: 0.5385061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092255cd2b89f3d50800000000000000
+      internalID: 6719257063028236944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftwalk_3
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 64
+        width: 948
+        height: 1642
+      alignment: 9
+      pivot: {x: 0.4517454, y: 0.56638247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65943e9f5712fd4e0800000000000000
+      internalID: -1954806922668193450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
