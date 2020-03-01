@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
         tf = GetComponent<Transform>();
         rb = GetComponent<Rigidbody>();
     }
-
+    
     // Update is called once per frame
     void Update()
     {
