@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5521656870106818007}
   - component: {fileID: 5521656870106818006}
   - component: {fileID: 5521656870106817993}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: '[Terrain Generator]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,13 +48,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 256
   height: 256
-  scale: 7
+  scale: 8
   offsetX: 100
   offsetY: 100
   sizeX: 50
   sizeY: 50
   block: {fileID: 9127730984154666135, guid: 45152308e457cc44ba29df9ff2a72263, type: 3}
-  thresholdValue: 0.65
+  blockSizeX: 4
+  blockSizeY: 4
+  thresholdValue: 0.6
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  enemyObj: {fileID: 408504557526409763, guid: a31749a9674b68242b3322cfc65eb765, type: 3}
+  enemyChance: 1
 --- !u!33 &5521656870106818007
 MeshFilter:
   m_ObjectHideFlags: 0

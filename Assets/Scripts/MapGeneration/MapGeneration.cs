@@ -17,7 +17,7 @@ public class MapGeneration : MonoBehaviour
     [SerializeField] private float thresholdValue;
     private GameObject environment;
     [Header("Enemies")] [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private GameObject enemyObj;
+    [SerializeField] private GameObject[] enemyObj;
     [Range(0f, 100f)] [SerializeField] private float enemyChance = 1.5f;
 
 
@@ -114,7 +114,7 @@ public class MapGeneration : MonoBehaviour
                 //Debug.DrawRay(new Vector3(2 * x + 0.5f, 1.7f, 2 * y + 0.5f), Vector3.down * 0.4f, Color.red, 60f);
                 if (hit.collider == null && Random.Range(0, 100) < enemyChance)
                 {
-                    Instantiate(enemyObj, new Vector3(blockSizeX * x + 0.5f, 0.5f, blockSizeY * y + 0.5f), Quaternion.identity, enemies.transform);
+                    Instantiate(enemyObj[Random.Range(0,enemyObj.Length)], new Vector3(blockSizeX * x + 0.5f, 0.5f, blockSizeY * y + 0.5f), Quaternion.identity, enemies.transform);
                 }
             }
         }

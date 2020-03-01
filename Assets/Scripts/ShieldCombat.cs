@@ -44,7 +44,7 @@ public class ShieldCombat : MonoBehaviour
             if(hitRb == null)
                 continue;
 
-            hitRb.velocity = (hit.transform.position - transform.position).normalized * 10;
+            hit.transform.position += (hit.transform.position - transform.position).normalized * 10;
             
             
         }

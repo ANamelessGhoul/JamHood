@@ -34,17 +34,24 @@ public class SwordCombat : MonoBehaviour
             
             if(hit.collider != null && !hitObjects.Contains(hit.collider.gameObject))
                 hitObjects.Add(hit.collider.gameObject);
-            Debug.Log(hitObjects.Count);
+            
+            
+            //Debug.Log(hitObjects.Count);
 
         }
 
         foreach (var hit in hitObjects)
         {
-            var hitRb = hit.GetComponent<Rigidbody>();
-            if(hitRb == null)
-                continue;
+            hit.transform.position += (hit.transform.position - transform.position).normalized * 1;
 
-            hitRb.velocity = (hit.transform.position - transform.position).normalized * 4;
         }
+        
+        yield return new WaitForSeconds(0.4f);
+
+        foreach (var hit in hitObjects)
+        {
+            Destroy(hit);
+        }
+
     }
 }

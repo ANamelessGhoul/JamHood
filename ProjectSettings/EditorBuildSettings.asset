@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Jamhood1.unity
+    guid: 3b4777dde0639cb4a8687f2e869e3b1d
   m_configObjects: {}
