@@ -32,7 +32,7 @@ public class CircleGenerator : MonoBehaviour
     {
         for (int i = 0; i < 360; i += 5)
         {
-            var locationVector = Quaternion.Euler(0, i, 0) * Vector3.forward * 10;
+            var locationVector = Quaternion.Euler(0, i, 0) * Vector3.forward * 30;
             
             var noiseValue = GenereteNoise(locationVector.x,locationVector.z);
             
